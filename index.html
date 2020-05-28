@@ -47,7 +47,7 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE." />
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
-<title>digital garden — sketches here and there</title>
+<title>Sketches here and there — Growing a digital garden</title>
 <!--~~ This is a Tiddlywiki file. The points of interest in the file are marked with this pattern ~~-->
 
 <!--~~ Raw markup ~~-->
@@ -151,6 +151,8 @@ Error message and password prompt
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/manager</li>
 
+<li>$:/config/RelinkOnRename</li>
+
 <li>$:/core</li>
 
 <li>$:/DefaultTiddlers</li>
@@ -185,9 +187,13 @@ Error message and password prompt
 
 <li>Contents</li>
 
-<li>Read This Year</li>
+<li>Read 2020</li>
+
+<li>TiddlyWiki</li>
 
 <li>Top of mind</li>
+
+<li>Touchstones</li>
 
 <li>Twitter</li>
 
@@ -208,7 +214,7 @@ Error message and password prompt
 <div created="20200524181542869" modified="20200524181542869" title="$:/config/DefaultSidebarTab">
 <pre>Contents</pre>
 </div>
-<div modified="20200524181635989" tags="Contents" title="$:/config/NewTiddler/Tags">
+<div created="20200528012921935" modified="20200528014146595" title="$:/config/NewTiddler/Tags">
 <pre></pre>
 </div>
 <div created="20200524180434834" modified="20200524180434834" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/close-all">
@@ -219,6 +225,9 @@ Error message and password prompt
 </div>
 <div created="20200524180449359" modified="20200524180449359" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/manager">
 <pre>show</pre>
+</div>
+<div created="20200528015334258" modified="20200528015334258" title="$:/config/RelinkOnRename">
+<pre>yes</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" name="Core" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.22">
 <pre>{
@@ -9593,18 +9602,17 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20200524175518076" modified="20200524181629927" title="$:/DefaultTiddlers">
-<pre>Contents
-About</pre>
+<div created="20200524175518076" modified="20200524200741480" title="$:/DefaultTiddlers">
+<pre>About</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
 </div>
-<div created="20200524175511984" modified="20200524175514669" title="$:/SiteSubtitle">
-<pre>sketches here and there</pre>
+<div created="20200524175511984" modified="20200524200718582" title="$:/SiteSubtitle">
+<pre>Growing a digital garden</pre>
 </div>
-<div created="20200524175507779" modified="20200524175509205" title="$:/SiteTitle">
-<pre>digital garden</pre>
+<div created="20200524175507779" modified="20200524200721949" title="$:/SiteTitle">
+<pre>Sketches here and there</pre>
 </div>
 <div created="20200524181951941" modified="20200524181955498" title="$:/state/Link/--1502361583/search">
 <pre></pre>
@@ -9615,13 +9623,13 @@ About</pre>
 <div created="20200524181823771" modified="20200524181836089" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/All</pre>
 </div>
-<div created="20200524180114732" modified="20200524181838765" title="$:/state/tab/sidebar--595412856">
+<div created="20200524180114732" modified="20200528015220472" title="$:/state/tab/sidebar--595412856">
 <pre>Contents</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20200524183236926" list="Twitter Contents About" modified="20200524183236926" title="$:/StoryList">
+<div created="20200528012906022" list="Twitter [[Top of mind]] [[Read 2020]] Touchstones Contents About" modified="20200528015340240" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9637,7 +9645,7 @@ About</pre>
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
-            &quot;text&quot;: &quot;file:///Users/joshsmith/Downloads/digital_garden%20(5).html&quot;
+            &quot;text&quot;: &quot;file:///Users/joshsmith/Box/Digital_Garden/index.html&quot;
         },
         &quot;$:/info/url/host&quot;: {
             &quot;title&quot;: &quot;$:/info/url/host&quot;,
@@ -9657,7 +9665,7 @@ About</pre>
         },
         &quot;$:/info/url/pathname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/pathname&quot;,
-            &quot;text&quot;: &quot;/Users/joshsmith/Downloads/digital_garden%20(5).html&quot;
+            &quot;text&quot;: &quot;/Users/joshsmith/Box/Digital_Garden/index.html&quot;
         },
         &quot;$:/info/url/search&quot;: {
             &quot;title&quot;: &quot;$:/info/url/search&quot;,
@@ -9794,19 +9802,103 @@ About</pre>
     }
 }</pre>
 </div>
-<div created="20200524175540730" modified="20200524181443081" tags="Contents" title="About">
-<pre>I am becoming a digital gardner.</pre>
+<div created="20200524175540730" modified="20200528013906748" tags="Contents" title="About">
+<pre>I am Josh Smith. I [[research|https://www.thecgo.org/josh-t-smith/]] public policy at The CGO. Immigration policy is my first love. In broader terms, I'm interested in human potential.
+
+You can follow what I'm building on &lt;a class=&quot;twitter-follow-button&quot;
+  href=&quot;https://twitter.com/smithtjosh&quot;&gt;
+@smithtjosh&lt;/a&gt;.
+
+The name, //Sketches Here and There// comes from [[Aldo Leopold|https://www.aldoleopold.org/about/aldo-leopold/sand-county-almanac/]]. Everyone should read //A Sand County Almanac//. 
+
+At a larger view than just Leopold, my [[touchstones|Touchstones]] are like a personal [[canon|https://www.brendanschlagel.com/2017/11/05/canonize-creating-personal-canon-template/]]. They are ideas that I see value in even if I don't agree with them. 
+
+I am using TiddlyWiki to become a [[digital gardener|https://github.com/MaggieAppleton/digital-gardeners]]. A digital garden is somewhere between blogging and note taking. 
+
+Most of this project is for me to build out a new skill. I'm unfamiliar with Github and TiddlyWiki. I may abandon this in just a few days, but I wanted to try it out. 
+
+You can learn about the basics of [[TiddlyWiki|https://nesslabs.com/tiddlywiki-beginner-tutorial]] and start your own. In short, I'm using [[TiddlyDesktop|https://github.com/Jermolene/TiddlyDesktop]] and a personal [[GitHub|https://boffosocko.com/2020/04/04/self-hosting-tiddlywiki-with-github-pages/]] site to create this wiki.</pre>
 </div>
-<div created="20200524180008364" list="$:core/ui/SideBar/Open" modified="20200524181654873" tags="$:/tags/SideBar Contents" title="Contents">
-<pre>&lt;div class= &quot;tc-table-of-contents&quot;&gt;
-&lt;&lt;toc-selective-expandable 'Contents' sort[title]&gt;&gt;
+<div created="20200524180008364" list="$:core/ui/SideBar/Open" modified="20200528014130520" tags="$:/tags/SideBar" title="Contents">
+<pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
+
+&lt;&lt;toc-selective-expandable 'Contents'&gt;&gt;
+
 &lt;/div&gt;</pre>
 </div>
-<div created="20200524181236189" modified="20200524181248819" tags="Contents [[Top of Mind]]" title="Read This Year">
-<pre></pre>
+<div created="20200524181236189" modified="20200528015757373" tags="[[Top of Mind]]" title="Read 2020">
+<pre>''Favorites''
+
+# Stand out of Our Light, James Williams
+# More From Less, Andrew McAfee
+# The Happiness Hypothesis, Jonathan Haidt
+#A Sand County Almanac, Aldo Leopold
+
+''Everything''
+
+* The Cigarette, Sarah Milov ***
+* Financial Freedom, Grant Sabatier ***
+* Irresistible, Adam Alter **
+* Finding Flow, Mihaly Csikszentmihalyi *****
+* The Charisma Myth, Olivia Cabana, ****
+* Focus, Daniel Goleman *
+** Stopped reading this, I really didn't like it. 
+* The 8th Habit, Stephen R. Covey ***
+    ** Stopped reading this because I'm concentrating on new inputs.
+* Walden, Henry David Thoreau ***
+* Mindset, Carol Dweck ***
+    ** I may have liked this better if I would have read it earlier. I have heard a lot of these ideas in similar books. 
+* Frederick Douglass: Prophet of Freedom, David W. Blight ***
+* More From Less, Andrew McAfee *****
+* Range, David Epstein ****
+* A Sand County Almanac, Aldo Leopold *****
+** Read this twice. Once for myself and a second time for a book club. 
+* Start With Why, Simon Sinek **
+* Find Your Why, Simon Sinek ***
+* Blowout, Rachel Maddow **
+* Stand Out of Our Light, James Williams ***
+    ** Probably one of my favorite books this year. An important book, with important contributions on our taxonomical approach to distraction. The book lacks a real path forward, and its political philosophy was disappointingly weak. Although a variety of philosophies are pointed to, which sometimes makes it feel grounded, it never endorses any specific system. This makes the book sometimes confusing, though I worry that in practice that it will create a moving goalpost for criticisms. The public choice problems are not considered, though the policy suggestions are not developed to a point where they are necessarily relevant. 
+* The 33 Strategies of War, Robert Greene **
+    ** I was disappointed. I started this book years ago and read some selections for a book club. I turned back to it as a way to work on my communications skills. I don’t think that there is much of value in how I want to build my brand and reputation as a researcher here. War is not my analogy. War is not my guide. I found it useful to revisit the chapters on communications and boosting morale. The morale point was more to do with the Start With Why conversation that I have been having with myself. 
+* The Complacent Class, Tyler Cowen ***
+* Squeezed, Alissa Quart **
+    ** Stopped reading because the analysis was unconvincing.
+* Wired to Eat, Robb Wolf *
+    ** Should not have even picked this up. I stopped listening multiple times in preference for silence. 
+* The Happiness Hypothesis, Jonathan Haidt ****
+** Another contender for my favorite book of the year.
+* Economics in the Age of COVID-19, Joshua Gans ****
+
+
+A lot of what I read are audiobooks that I listen to while biking or walking. On average, I remember less from audiobooks.
+</pre>
 </div>
-<div created="20200524175711270" modified="20200524180816230" tags="Contents" title="Top of mind">
-<pre>Here's what I've been up to lately:
+<div created="20200524201045180" modified="20200524201126487" title="TiddlyWiki">
+<pre>The philosophy of [[TiddlyWiki|https://tiddlywiki.com/static/Philosophy%2520of%2520Tiddlers.html]].
+
+</pre>
+</div>
+<div created="20200524175711270" modified="20200528015349875" tags="Contents" title="Top of mind">
+<pre>Reading ([[Read This Year|Read 2020]])
+
+* //Desert Solitaire//, Edward Abbey
+
+* //Our 50-State Border Crisis: How the Mexican Border Fuels the Drug Epidemic Across America//, Howard G. Buffett
+
+My most recent [[blog post|https://medium.com/@smithtjosh]].</pre>
+</div>
+<div created="20200524202123490" modified="20200528023251270" tags="Contents" title="Touchstones">
+<pre>Touchstones are like a personal canon. These are ideas that I see value in even if I don't entirely agree with them.
+
+[[Pursue the deep life|https://www.calnewport.com/blog/2020/05/14/the-deep-reset/]] (inspired by Cal Newport's ideas)
+
+[[Finding Flow, Mihaly Csikszentmihaly|https://www.amazon.com/dp/B07XM7SFJY/ref=dp-kindle-redirect?_encoding=UTF8&amp;btkr=1]]
+
+[[The Monkey Wrench Gang, Edward Abbey|https://en.wikipedia.org/wiki/The_Monkey_Wrench_Gang]]
+
+[[This is water|https://www.youtube.com/watch?v=8CrOL-ydFMI]]
+
+
 
 </pre>
 </div>
